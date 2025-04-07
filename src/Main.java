@@ -9,7 +9,9 @@ public class Main {
         // tiposDeDados();
         // comparaString("textoA", "textoB");
         // formataString();
-        conversao();
+        // conversao();
+
+        Condicional.condicionaisJava();     // Chamada do método de condicionais da classe Condicional
     }
 
     public static void textBlock() {
@@ -116,3 +118,4 @@ public class Main {
     }
 
 }
+
