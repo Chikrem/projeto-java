@@ -1,25 +1,32 @@
+// Início Aula-1
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
-        
-        int anoDeLancamento = 2022;
-        
-        System.out.println("Ano de Lançamento: " + anoDeLancamento);
-        
-        String sinopse;
-        
-        sinopse = """
-            Filme Top Gun
-            Filme de aventura com galã dos anos 80
-            Muito bom!
-            Ano de Lançamento
-            """ + anoDeLancamento;
-            
-        System.out.println(sinopse);
 
         // Chamada de métodos
+        textBlock();
         // operadores();
         // tiposDeDados();
+        // comparaString("textoA", "textoB");
+    }
+
+    public static void textBlock(){
+        System.out.println("Hello, World!");
+
+        int anoDeLancamento = 2022;
+
+        System.out.println("Ano de Lançamento: " + anoDeLancamento);
+
+        String sinopse; // TextBlock
+
+        sinopse = """
+                Filme Top Gun
+                Filme de aventura com galã dos anos 80
+                Muito bom!
+                Ano de Lançamento
+                """ + anoDeLancamento;
+
+        System.out.println(sinopse);
     }
 
     public static void operadores() {
@@ -43,19 +50,36 @@ public class Main {
     public static void tiposDeDados() {
         // Tipos primitivos
         int numero = 10; // inteiro
-        double decimal = (10.5 + 55.5 + 10.9)/2; // ponto flutuante
+        double decimal = (10.5 + 55.5 + 10.9) / 2; // ponto flutuante
         char letra = 'A'; // caractere
         boolean verdadeiro = true; // booleano
-        
+
         // Tipos não primitivos
-        String texto = "Olá Mundo!"; // string  
-        
+        String texto = "Olá Mundo!"; // string
+
         // Exibindo os valores
         System.out.println("Número: " + numero);
         System.out.println("Decimal: " + decimal);
         System.out.println("Letra: " + letra);
         System.out.println("Verdadeiro: " + verdadeiro);
         System.out.println("Texto: " + texto);
-    }     
+    }
+
+    public static void comparaString(String str1, String str2) {
+        
+        String senha = "12345";
+        if (senha.equals("12345")) {
+            System.out.println("Acesso autorizado!");
+        } else {
+            System.out.println("Senha incorreta.");
+        }
+
+        if (str1.equals(str2)) {
+            System.out.println("As strings são iguais.");
+        } else {
+            System.out.println("As strings são diferentes.");
+        }
+
+    }
 
 }
