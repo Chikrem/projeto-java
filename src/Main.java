@@ -4,13 +4,14 @@ public class Main {
     public static void main(String[] args) {
 
         // Chamada de métodos
-        textBlock();
+        // textBlock();
         // operadores();
         // tiposDeDados();
         // comparaString("textoA", "textoB");
+        formataString();
     }
 
-    public static void textBlock(){
+    public static void textBlock() {
         System.out.println("Hello, World!");
 
         int anoDeLancamento = 2022;
@@ -66,7 +67,7 @@ public class Main {
     }
 
     public static void comparaString(String str1, String str2) {
-        
+
         String senha = "12345";
         if (senha.equals("12345")) {
             System.out.println("Acesso autorizado!");
@@ -80,6 +81,14 @@ public class Main {
             System.out.println("As strings são diferentes.");
         }
 
+    }
+
+    public static void formataString() {
+        String nome = "Maria";
+        int idade = 30;
+        double valor = 55.9999;
+        String mensagem = String.format("Meu nome é %s, eu tenho %d anos e hoje gastei %.2f reais", nome, idade, valor);
+        System.out.println(mensagem);
     }
 
 }
