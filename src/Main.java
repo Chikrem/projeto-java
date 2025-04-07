@@ -17,7 +17,11 @@ public class Main {
         // Condicional.switchDia(7);;
         
         // Entrada de dados do teclado
-        Inputs.entradaTeclado();
+        // Inputs.entradaTeclado();
+
+        // Loops
+        // Loops.loopFor();
+        Loops.loopWhile();
     }
 
     public static void textBlock() {
