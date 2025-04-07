@@ -35,4 +35,51 @@ public class Condicional {
 
     }
 
-} 
+    public static void switchCase(String tipoPlano) {
+
+        switch (tipoPlano) {
+            case "premium":
+                System.out.println("Plano Premium");
+                break;
+            case "basic":
+                System.out.println("Plano Básico");
+                break;
+            default:
+                System.out.println("Outro tipo de plano");
+                break;
+        }
+    }
+
+    public static void switchDia(int dia) {
+        String nomeDia;
+
+        switch (dia) {
+            case 1:
+                nomeDia = "domingo";
+                break;
+            case 2:
+                nomeDia = "segunda-feira";
+                break;
+            case 3:
+                nomeDia = "terça-feira";
+                break;
+            case 4:
+                nomeDia = "quarta-feira";
+                break;
+            case 5:
+                nomeDia = "quinta-feira";
+                break;
+            case 6:
+                nomeDia = "sexta-feira";
+                break;
+            case 7:
+                nomeDia = "sábado";
+                break;
+            default:
+                nomeDia = "Dia inválido";
+                break;
+        }
+
+        System.out.println("O dia " + dia + " é " + nomeDia);
+    }
+}

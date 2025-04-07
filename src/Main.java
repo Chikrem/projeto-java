@@ -11,7 +11,10 @@ public class Main {
         // formataString();
         // conversao();
 
-        Condicional.condicionaisJava();     // Chamada do método de condicionais da classe Condicional
+        // Chamada de métodos de Classe externas
+        //Condicional.condicionaisJava();                
+        // Condicional.switchCase("premium");     
+        Condicional.switchDia(7);;  
     }
 
     public static void textBlock() {
