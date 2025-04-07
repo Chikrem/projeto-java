@@ -8,7 +8,8 @@ public class Main {
         // operadores();
         // tiposDeDados();
         // comparaString("textoA", "textoB");
-        formataString();
+        // formataString();
+        conversao();
     }
 
     public static void textBlock() {
@@ -89,6 +90,29 @@ public class Main {
         double valor = 55.9999;
         String mensagem = String.format("Meu nome é %s, eu tenho %d anos e hoje gastei %.2f reais", nome, idade, valor);
         System.out.println(mensagem);
+    }
+
+    public static void conversao() {
+        // Casting
+        int numero = 9;
+        double decimal = (double) numero/2; // conversão de int para double
+        System.out.println("Número: " + numero);
+        System.out.println("Decimal: " + decimal);
+
+        // Conversão de String para int
+        String strNumero = "123";
+        int numeroConvertido = Integer.parseInt(strNumero);
+        System.out.println("Número convertido: " + numeroConvertido);
+
+        // Conversão de int para String
+        int numeroInt = 456;
+        String strConvertido = String.valueOf(numeroInt);
+        System.out.println("String convertida: " + strConvertido);
+
+        // Conversão de String para double
+        String strDecimal = "123.45";
+        double decimalConvertido = Double.parseDouble(strDecimal);
+        System.out.println("Decimal convertido: " + decimalConvertido);
     }
 
 }
