@@ -14,7 +14,10 @@ public class Main {
         // Chamada de métodos de Classe externas
         //Condicional.condicionaisJava();                
         // Condicional.switchCase("premium");     
-        Condicional.switchDia(7);;  
+        // Condicional.switchDia(7);;
+        
+        // Entrada de dados do teclado
+        Inputs.entradaTeclado();
     }
 
     public static void textBlock() {
